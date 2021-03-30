@@ -13,12 +13,14 @@ export default class App extends Component {
         return (
             <>
                 <Navbar bg="white" expand="lg">
-                    <Navbar.Brand><h3><Badge>Hakan Ünal</Badge></h3><Badge pill variant="white">Md. Software Developer</Badge> </Navbar.Brand>
+                    <Navbar.Brand>
+                        <h4><Badge>Hakan Ünal</Badge></h4><Badge pill variant="white">Md. Software Developer</Badge>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href="https://git.devtagon.com/Hakan-unal"><AiFillGitlab size={55} color="black"title="Gitlab" /></Nav.Link>
-                            <Nav.Link href="https://github.com/Hakan-unal"><AiOutlineGithub size={55} color="black"title="Github" /></Nav.Link>
+                            <Nav.Link href="https://git.devtagon.com/Hakan-unal"><AiFillGitlab size={55} color="black" title="Gitlab" /></Nav.Link>
+                            <Nav.Link href="https://github.com/Hakan-unal"><AiOutlineGithub size={55} color="black" title="Github" /></Nav.Link>
                             <Nav.Link href="https://www.linkedin.com/in/hakan-unal/"><AiFillLinkedin size={55} color="black" title="Linkedin" /></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

@@ -1,15 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
-import { Card, Button, Row, Col } from 'react-bootstrap';
+import { Card, Button, Row, Col, Modal } from 'react-bootstrap';
 import logo from '../logo.svg';
-
+import Lottery from './applications/lottery';
 export default class Application extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            applicationModal: false,
+            modalContent: null,
+            modalHeader: null
+        };
+    }
+
+    handleShow = (value, modalHeader) => {
+        this.setState({ applicationModal: !this.state.applicationModal, modalContent: value, modalHeader: modalHeader })
     }
 
     render() {
+
+
         return (
 
             <>
@@ -18,12 +28,12 @@ export default class Application extends Component {
                         <Card >
                             <Card.Img variant="top" src={logo} />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Lottery</Card.Title>
                                 <Card.Text>
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card's content.
                         </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary" onClick={() => this.handleShow(1, "Lottery")}>Demo</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -36,7 +46,7 @@ export default class Application extends Component {
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card's content.
                         </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary" onClick={() => this.handleShow(2)}>Demo</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -49,7 +59,7 @@ export default class Application extends Component {
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card's content.
                         </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary" onClick={() => this.handleShow(3)}>Demo</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -62,11 +72,26 @@ export default class Application extends Component {
                                     Some quick example text to build on the card title and make up the bulk of
                                     the card's content.
                         </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary" onClick={() => this.handleShow(4)}>Demo</Button>
                             </Card.Body>
                         </Card>
                     </Col>
                 </Row>
+
+
+
+
+
+
+                <Modal show={this.state.applicationModal} onHide={() => this.handleShow()} animation={true} size="lg">
+                    <Modal.Header closeButton>
+                        <Modal.Title className="text-center">{this.state.modalHeader}</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <Lottery />
+                    </Modal.Body>
+                </Modal>
+
             </>
 
         );
