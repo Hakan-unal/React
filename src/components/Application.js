@@ -29,50 +29,8 @@ export default class Application extends Component {
                             <Card.Img variant="top" src={logo} />
                             <Card.Body>
                                 <Card.Title>Lottery</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                        </Card.Text>
+                                <Card.Text>You can draw from the values ​​you entered into the application.</Card.Text>
                                 <Button variant="primary" onClick={() => this.handleShow(1, "Lottery")}>Demo</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }} xl={{ span: 3 }} >
-                        <Card >
-                            <Card.Img variant="top" src={logo} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                        </Card.Text>
-                                <Button variant="primary" onClick={() => this.handleShow(2)}>Demo</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }} xl={{ span: 3 }} >
-                        <Card >
-                            <Card.Img variant="top" src={logo} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                        </Card.Text>
-                                <Button variant="primary" onClick={() => this.handleShow(3)}>Demo</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }} xl={{ span: 3 }} >
-                        <Card >
-                            <Card.Img variant="top" src={logo} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                        </Card.Text>
-                                <Button variant="primary" onClick={() => this.handleShow(4)}>Demo</Button>
                             </Card.Body>
                         </Card>
                     </Col>

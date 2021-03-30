@@ -41,7 +41,7 @@ export default class Lottery extends Component {
     return (
       <>
         <Row>
-          <Col sm={{ span: 9 }}>
+          <Col sm={{ span: 9 }} className="mt-2">
             <FormControl
               placeholder="Fill in the blank"
               aria-label="Username"
@@ -51,8 +51,8 @@ export default class Lottery extends Component {
               onChange={(event) => this.setState({ [event.target.name]: event.target.value })}
             />
           </Col>
-          <Col sm={{ span: 3 }}>
-            <Button block variant="primary" onClick={() => this.addTableRow()}>Save</Button>
+          <Col sm={{ span: 3 }} className="mt-2">
+            <Button block variant="primary" onClick={() => this.addTableRow()}>Add Table</Button>
           </Col>
 
           <Col sm={{ span: 3, offset: 3 }}>
