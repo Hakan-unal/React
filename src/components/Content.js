@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
 import { Nav } from 'react-bootstrap';
 import AboutMe from './AboutMe';
-import Application from './AboutMe';
-import Design from './AboutMe';
+import Application from './Application';
+import Design from './Design';
 
 export default class App extends Component {
     constructor(props) {
