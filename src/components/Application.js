@@ -61,8 +61,7 @@ export default class Application extends Component {
               <Card.Body>
                 <Card.Title>Covid</Card.Title>
                 <Card.Text>
-                  You can draw from the values ​​you entered into the
-                  application.
+                  The current number of covid cases can be followed by country.
                 </Card.Text>
                 <Button
                   variant="primary"
