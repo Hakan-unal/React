@@ -17,7 +17,7 @@ class Switch extends React.Component {
     };
   }
 
-  changeSwitch = (name, value, switchOrder) => {
+  changeSwitch = (name, value) => {
     const randomNumber1 = parseInt(Math.random() * 8) + 1;
     const randomNumber2 = parseInt(Math.random() * 8) + 1;
     if(randomNumber1===randomNumber2){
@@ -39,7 +39,7 @@ class Switch extends React.Component {
             name="switchButton1"
             checked={this.state.switchButton1}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 1)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -51,7 +51,7 @@ class Switch extends React.Component {
             name="switchButton2"
             checked={this.state.switchButton2}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 2)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -63,7 +63,7 @@ class Switch extends React.Component {
             name="switchButton3"
             checked={this.state.switchButton3}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 3)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -75,7 +75,7 @@ class Switch extends React.Component {
             name="switchButton4"
             checked={this.state.switchButton4}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 4)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -87,7 +87,7 @@ class Switch extends React.Component {
             name="switchButton5"
             checked={this.state.switchButton5}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 5)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -99,7 +99,7 @@ class Switch extends React.Component {
             name="switchButton6"
             checked={this.state.switchButton6}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 6)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -111,7 +111,7 @@ class Switch extends React.Component {
             name="switchButton7"
             checked={this.state.switchButton7}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 7)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -123,7 +123,7 @@ class Switch extends React.Component {
             name="switchButton8"
             checked={this.state.switchButton8}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 8)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
@@ -135,7 +135,7 @@ class Switch extends React.Component {
             name="switchButton9"
             checked={this.state.switchButton9}
             onChange={(event) =>
-              this.changeSwitch(event.target.name, event.target.checked, 9)
+              this.changeSwitch(event.target.name, event.target.checked)
             }
           />
         </div>
