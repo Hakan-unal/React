@@ -4,6 +4,7 @@ import { Card, Button, Row, Col, Modal } from "react-bootstrap";
 import logo from "../logo.svg";
 import Lottery from "./applications/lottery";
 import Covid from "./applications/covid";
+import Switch from "./applications/switch";
 export default class Application extends Component {
   constructor(props) {
     super(props);
@@ -72,6 +73,29 @@ export default class Application extends Component {
               </Card.Body>
             </Card>
           </Col>
+
+          <Col
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card>
+              <Card.Img variant="top" src={logo} />
+              <Card.Body>
+                <Card.Title>Switch Game</Card.Title>
+                <Card.Text>
+                Will you be able to open all switch inputs ?
+                </Card.Text>
+                <Button
+                  variant="primary"
+                  onClick={() => this.handleShow(3, "Switch")}
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
 
         <Modal
@@ -90,6 +114,8 @@ export default class Application extends Component {
               <Lottery />
             ) : this.state.modalContent === 2 ? (
               <Covid />
+            ) : this.state.modalContent === 3 ? (
+              <Switch />
             ) : null}
           </Modal.Body>
         </Modal>
