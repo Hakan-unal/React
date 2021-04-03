@@ -15,12 +15,12 @@ export default class Lottery extends Component {
   addTableRow = () => {
     const tempArr = this.state.inputArray;
     tempArr.push(this.state.inputValue)
-    this.setState({ inputArray: tempArr, inputValue: "" })
+    this.setState({ inputArray: tempArr, inputValue: "",tableRowID:null })
   }
   removeTableRow = (rowIndex) => {
     const tempArr = this.state.inputArray;
     tempArr.splice(rowIndex, 1);
-    this.setState({ inputArray: tempArr })
+    this.setState({ inputArray: tempArr,tableRowID:null })
   }
   handleLottery = () => {
     const tempValue = parseInt(Math.random() * this.state.inputArray.length)
@@ -61,7 +61,7 @@ export default class Lottery extends Component {
         <Row className="mt-4">
           {(this.state.inputArray.length > 0) ?
             <>
-              <Table responsive hover striped>
+              <Table responsive hover striped size="sm">
                 <thead>
                   <tr>
                     <th>#</th>
