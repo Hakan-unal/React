@@ -5,6 +5,7 @@ import logo from "../logo.svg";
 import Lottery from "./applications/lottery";
 import Covid from "./applications/covid";
 import Switch from "./applications/switch";
+import MemoryGame from "./applications/memoryGame";
 export default class Application extends Component {
   constructor(props) {
     super(props);
@@ -85,17 +86,44 @@ export default class Application extends Component {
               <Card.Body>
                 <Card.Title>Switch Game</Card.Title>
                 <Card.Text>
-                Will you be able to open all switch inputs ?
+                  Will you be able to open all switch inputs ?
                 </Card.Text>
                 <Button
                   variant="primary"
-                  onClick={() => this.handleShow(3, "Switch")}
+                  onClick={() => this.handleShow(3, "Switch Game")}
                 >
                   Demo
                 </Button>
               </Card.Body>
             </Card>
           </Col>
+
+
+          <Col
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card>
+              <Card.Img variant="top" src={logo} />
+              <Card.Body>
+                <Card.Title>Memory Game</Card.Title>
+                <Card.Text>
+                Memory Game
+                </Card.Text>
+                <Button
+                  variant="primary"
+                  onClick={() => this.handleShow(4, "Memory Game")}
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+
+
         </Row>
 
         <Modal
@@ -110,13 +138,15 @@ export default class Application extends Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            {this.state.modalContent === 1 ? (
+            {this.state.modalContent === 1 ?
               <Lottery />
-            ) : this.state.modalContent === 2 ? (
-              <Covid />
-            ) : this.state.modalContent === 3 ? (
-              <Switch />
-            ) : null}
+              : this.state.modalContent === 2 ?
+                <Covid />
+                : this.state.modalContent === 3 ?
+                  <Switch />
+                  : this.state.modalContent === 4 ?
+                  <MemoryGame />
+                  : null}
           </Modal.Body>
         </Modal>
       </>

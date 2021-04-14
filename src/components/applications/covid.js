@@ -6,7 +6,7 @@ class Covid extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      covids: [],
+      covids: []
     };
   }
   async componentDidMount() {
