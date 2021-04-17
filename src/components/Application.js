@@ -29,6 +29,7 @@ export default class Application extends Component {
       <>
         <Row className="mt-5 mx-3">
           <Col
+            className="mt-2"
             sm={{ span: 12 }}
             md={{ span: 6 }}
             lg={{ span: 4 }}
@@ -43,7 +44,7 @@ export default class Application extends Component {
                   application.
                 </Card.Text>
                 <Button
-                  variant="primary"
+                  variant="outline-primary"
                   onClick={() => this.handleShow(1, "Lottery")}
                 >
                   Demo
@@ -53,6 +54,7 @@ export default class Application extends Component {
           </Col>
 
           <Col
+            className="mt-2"
             sm={{ span: 12 }}
             md={{ span: 6 }}
             lg={{ span: 4 }}
@@ -66,7 +68,7 @@ export default class Application extends Component {
                   The current number of covid cases can be followed by country.
                 </Card.Text>
                 <Button
-                  variant="primary"
+                  variant="outline-primary"
                   onClick={() => this.handleShow(2, "Covid")}
                 >
                   Demo
@@ -76,6 +78,7 @@ export default class Application extends Component {
           </Col>
 
           <Col
+            className="mt-2"
             sm={{ span: 12 }}
             md={{ span: 6 }}
             lg={{ span: 4 }}
@@ -89,7 +92,7 @@ export default class Application extends Component {
                   Will you be able to open all switch inputs ?
                 </Card.Text>
                 <Button
-                  variant="primary"
+                  variant="outline-primary"
                   onClick={() => this.handleShow(3, "Switch Game")}
                 >
                   Demo
@@ -100,6 +103,7 @@ export default class Application extends Component {
 
 
           <Col
+            className="mt-2"
             sm={{ span: 12 }}
             md={{ span: 6 }}
             lg={{ span: 4 }}
@@ -110,10 +114,10 @@ export default class Application extends Component {
               <Card.Body>
                 <Card.Title>Memory Game</Card.Title>
                 <Card.Text>
-                Memory Game
+                  A game you can play using your memory
                 </Card.Text>
                 <Button
-                  variant="primary"
+                  variant="outline-primary"
                   onClick={() => this.handleShow(4, "Memory Game")}
                 >
                   Demo
@@ -145,8 +149,8 @@ export default class Application extends Component {
                 : this.state.modalContent === 3 ?
                   <Switch />
                   : this.state.modalContent === 4 ?
-                  <MemoryGame />
-                  : null}
+                    <MemoryGame />
+                    : null}
           </Modal.Body>
         </Modal>
       </>

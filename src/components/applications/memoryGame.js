@@ -5,7 +5,7 @@ class MemoryGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            cards: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+            cards: [1, 2, 3, 4, 5, 6, 7, 8, 9]
         };
     }
     mouseExitCard = (cardIndex) => {
@@ -17,8 +17,8 @@ class MemoryGame extends React.Component {
     render() {
         const cards = this.state.cards.map((card, index) => {
             return (
-                <Col className="mt-2" sm={{ span: 3 }} md={{ span: 3 }} lg={{ span: 3 }} xl={{ span: 3 }} key={index}>
-                    <Card className={this.state["card" + index] ? "bg-dark" : "bg-light"} style={{ width: 100, height: 100 }} onMouseEnter={() => this.mouseEnterCard(index)} onMouseLeave={() => this.mouseExitCard(index)}>
+                <Col className="mt-2 d-flex justify-content-center" xs={{ span: 4 }} sm={{ span: 4 }} md={{ span: 4 }} lg={{ span: 4 }} xl={{ span: 4 }} key={index}>
+                    <Card className={this.state["card" + index] ? "bg-dark" : "bg-light"} style={{ width: 85, height: 85 }} onMouseEnter={() => this.mouseEnterCard(index)} onMouseLeave={() => this.mouseExitCard(index)}>
                         <Card.Body>
                             <Card.Title className="text-center"></Card.Title>
                         </Card.Body>
