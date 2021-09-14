@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Form, Button } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
 
 class Calculator extends React.Component {
     constructor(props) {
