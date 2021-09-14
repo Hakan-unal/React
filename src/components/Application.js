@@ -6,6 +6,9 @@ import Lottery from "./applications/lottery";
 import Covid from "./applications/covid";
 import Switch from "./applications/switch";
 import MemoryGame from "./applications/memoryGame";
+import Calculator from "./applications/calculator";
+
+
 export default class Application extends Component {
   constructor(props) {
     super(props);
@@ -127,6 +130,31 @@ export default class Application extends Component {
           </Col>
 
 
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card>
+              <Card.Img variant="top" src={logo} />
+              <Card.Body>
+                <Card.Title>Calculator</Card.Title>
+                <Card.Text>
+                  Basic Calculator
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  onClick={() => this.handleShow(5, "Calculator")}
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+
 
         </Row>
 
@@ -150,7 +178,11 @@ export default class Application extends Component {
                   <Switch />
                   : this.state.modalContent === 4 ?
                     <MemoryGame />
-                    : null}
+                    : this.state.modalContent === 5 ?
+                      <Calculator />
+                      :
+                      null
+            }
           </Modal.Body>
         </Modal>
       </>
