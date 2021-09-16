@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
-import { Card, Button, Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import HUnumberInput from '../tools/HUnumberInput';
 
 export default class Design extends Component {
@@ -38,37 +38,7 @@ export default class Design extends Component {
                         // isVerticalLabel={false}
                     />
                 </Row>
-                <Row className="mt-5 mx-3">
-                    <Col
-                        className="mt-2"
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 12 }}
-                        xl={{ span: 12 }}
-                    >
-                        <Card>
-                            <Card.Header>Only Number Input</Card.Header>
-                            <Card.Body>
-
-                                <Button variant="outline-primary" outline onClick={() => this.handleShowModal(1)}>
-                                    Show Code
-                                </Button>
-                            </Card.Body>
-                            {this.state.isOpenCard1 ?
-                                <Card.Footer>
-                                    Test Test Test
-                                </Card.Footer>
-                                :
-                                null
-                            }
-                        </Card>
-                    </Col>
-
-
-
-
-
-                </Row>
+                
 
 
 

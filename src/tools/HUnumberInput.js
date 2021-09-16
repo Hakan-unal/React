@@ -21,17 +21,16 @@ import { Form, Row, Col } from "react-bootstrap";
 
 const style = {
     borderRadius: 20,
-    width: "100%",
-    borderBottom: "2px",
-    borderTop: "2px",
-    borderLeft: "2px",
-    borderRight: "2px",
-    opacity:0.9,
-    textAlign:"center",
-    backgroundColor:"#EEEEEE75",
-    cursor:"pointer",
-    color:"#000000",
-    fontWeight:"bold",
+    borderTop: 0,
+    borderLeft: 0,
+    borderRight: 0,
+    opacity: 0.9,
+    textAlign: "center",
+    backgroundColor: "#EEEEEE90",
+    cursor: "pointer",
+    color: "#000000",
+    fontWeight: "bold",
+    boxShadow:"none"
 }
 
 export default class HUnumberInput extends Component {
@@ -55,7 +54,6 @@ export default class HUnumberInput extends Component {
                     <Form.Label column={true}>{this.props.inputLabel ? this.props.inputLabel + " :" : ""}</Form.Label>
                 </Col>
                 <Col sm={{ span: this.props.isVerticalLabel ? 12 : 8 }}>
-
                     <Form.Control
                         ref={c => console.log(c)}
                         value={this.props.value ? this.numberInputFormater(this.props.value) : null}
@@ -70,7 +68,7 @@ export default class HUnumberInput extends Component {
                         onMouseEnter={() => this.setState({ isHidden: false })}
                         onMouseLeave={() => this.setState({ isHidden: true })}
                         maxLength={this.props.maxLength ? this.props.maxLength : 50}
-                        style={style}
+                        style={{ ...style, borderBottomColor: this.state.isHidden ? "gray" : "blue" }}
                     />
                     {this.props.isInvalidValue ?
                         <small className="text-danger">{this.props.warningText}</small>
