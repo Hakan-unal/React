@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
-import { Card, Button, Row, Col, Form } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 import HUnumberInput from '../tools/HUnumberInput';
 
 export default class Design extends Component {
