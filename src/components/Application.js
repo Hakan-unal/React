@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
 import { Card, Button, Row, Col, Modal } from "react-bootstrap";
-import logo from "../logo.svg";
 import Lottery from "./applications/lottery";
 import Covid from "./applications/covid";
 import Switch from "./applications/switch";
@@ -39,18 +38,18 @@ export default class Application extends Component {
             xl={{ span: 3 }}
           >
             <Card>
-              <Card.Img variant="top" src={logo} />
+              <Card.Img width={100} height={150} variant="top" src="https://play-lh.googleusercontent.com/tzd1ewmTpFsQdSFHPwVwG-jARqimlMhX8jCWKWI0gvWQsq8FJnG98bJzLGPdGaBFw21l=s360-rw" />
               <Card.Body>
-                <Card.Title>Lottery</Card.Title>
+                <Card.Title>KFC GIDA</Card.Title>
+                <hr />
                 <Card.Text>
-                  You can draw from the values ​​you entered into the
-                  application.
+                  Mobile android application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
-                  onClick={() => this.handleShow(1, "Lottery")}
+                  href="https://play.google.com/store/apps/details?id=com.extranet&hl=tr&gl=US"
                 >
-                  Demo
+                  Show
                 </Button>
               </Card.Body>
             </Card>
@@ -64,17 +63,19 @@ export default class Application extends Component {
             xl={{ span: 3 }}
           >
             <Card>
-              <Card.Img variant="top" src={logo} />
+              <Card.Img width={100} height={150} variant="top" src="https://play-lh.googleusercontent.com/tzd1ewmTpFsQdSFHPwVwG-jARqimlMhX8jCWKWI0gvWQsq8FJnG98bJzLGPdGaBFw21l=s360-rw" />
               <Card.Body>
-                <Card.Title>Covid</Card.Title>
+                <Card.Title>KFC GIDA</Card.Title>
+                <hr />
+
                 <Card.Text>
-                  The current number of covid cases can be followed by country.
+                  Mobile ios application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
-                  onClick={() => this.handleShow(2, "Covid")}
+                  href="https://apps.apple.com/tr/app/kfc-%C3%BCretici-bilgi-takip/id1586120006?l=tr"
                 >
-                  Demo
+                  Show
                 </Button>
               </Card.Body>
             </Card>
@@ -88,42 +89,18 @@ export default class Application extends Component {
             xl={{ span: 3 }}
           >
             <Card>
-              <Card.Img variant="top" src={logo} />
+              <Card.Img width={100} height={150} variant="top" src="https://play-lh.googleusercontent.com/uvANNHshsAPG874Oh2idH-id2xB5HvAoq4GF4b2RUPW1hvGP8ATkuZr751tXFyAAMxI=s360-rw" />
               <Card.Body>
-                <Card.Title>Switch Game</Card.Title>
+                <Card.Title>TODO APP</Card.Title>
+                <hr />
                 <Card.Text>
-                  Will you be able to open all switch inputs ?
+                  Mobile android application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
-                  onClick={() => this.handleShow(3, "Switch Game")}
+                  href="https://play.google.com/store/apps/details?id=com.mytodoapp123"
                 >
-                  Demo
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-
-          <Col
-            className="mt-2"
-            sm={{ span: 12 }}
-            md={{ span: 6 }}
-            lg={{ span: 4 }}
-            xl={{ span: 3 }}
-          >
-            <Card>
-              <Card.Img variant="top" src={logo} />
-              <Card.Body>
-                <Card.Title>Memory Game</Card.Title>
-                <Card.Text>
-                  A game you can play using your memory
-                </Card.Text>
-                <Button
-                  variant="outline-primary"
-                  onClick={() => this.handleShow(4, "Memory Game")}
-                >
-                  Demo
+                  Show
                 </Button>
               </Card.Body>
             </Card>
@@ -138,17 +115,71 @@ export default class Application extends Component {
             xl={{ span: 3 }}
           >
             <Card>
-              <Card.Img variant="top" src={logo} />
+              <Card.Img width={100} height={150} variant="top" src="https://files.sikayetvar.com/lg/cmp/15/155920.png?1614947557" />
               <Card.Body>
-                <Card.Title>Calculator</Card.Title>
+                <Card.Title>IN-LINE</Card.Title>
+                <hr />
                 <Card.Text>
-                  Basic Calculator
+                  React web application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
-                  onClick={() => this.handleShow(5, "Calculator")}
+                  href="https://inline.devtagon.com/"
+                >
+                  Show
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card>
+              <Card.Img width={100} height={150} variant="top" src="https://media-exp1.licdn.com/dms/image/C4E0BAQE5s2GA-JIQng/company-logo_200_200/0/1603700990543?e=2159024400&v=beta&t=SkfWkrLvYYthQteE1_sDXtxgRHR9DY3RrD5d3qFO_4o" />
+              <Card.Body>
+                <Card.Title>DUYUROOM</Card.Title>
+                <hr />
+                <Card.Text>
+                  React web application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://demo.duyuroom.com/"
                 >
                   Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+
+
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card>
+              <Card.Img variant="top" src="https://files.sikayetvar.com/lg/cmp/15/155920.png?1614947557" width={100} height={150} />
+              <Card.Body>
+                <Card.Title>EXTRANET</Card.Title>
+                <hr />
+                <Card.Text>
+                  React web application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://inline-extranet.devtagon.com/"
+                >
+                  Show
                 </Button>
               </Card.Body>
             </Card>
