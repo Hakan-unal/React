@@ -26,11 +26,9 @@ export default class App extends Component {
                         <Nav.Link eventKey="aboutMe" className="text-dark lead">About Me</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="application" className="text-dark lead">Application</Nav.Link>
+                        <Nav.Link eventKey="application" className="text-dark lead">Applications</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="components" className="text-dark lead">Components</Nav.Link>
-                    </Nav.Item>
+
 
                 </Nav>
 
