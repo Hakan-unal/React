@@ -1,50 +1,42 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
-import { Row } from "react-bootstrap";
-import HUnumberInput from '../tools/HUnumberInput';
+import * as THREE from "three";
 
 export default class Design extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isOpenCard1: false,
-            input1: null
+
         };
     }
+    componentDidMount() {
+        // === THREE.JS CODE START ===
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        var geometry = new THREE.BoxGeometry(1, 1, 1);
+        var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        var cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+        camera.position.z = 5;
+        var animate = function () {
+            requestAnimationFrame(animate);
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        };
+        animate();
+        // === THREE.JS EXAMPLE CODE END ===
+    }
 
-    handleShowModal = (index) => {
-        this.setState({ ["isOpenCard" + index]: !this.state["isOpenCard" + index] })
-        console.log(this.state)
-    }
-    numberInputFormeter = (value, index) => {
-        this.setState({ ["input" + index]: value.replace(/[^0-9.-]+/g, '').replace('-', '') })
-    }
 
-    onChange = (event) => {
-        this.setState({ input1: event.target.value })
-    }
     render() {
         return (
-            <>
-                <Row className="my-3 mx-5">
-                    <HUnumberInput
-                        value={this.state.input1}
-                        onChange={this.onChange}
-                        notificationText="En az 4 rakamlı olmaz zorunda"
-                        // isInvalidValue={true}
-                        // warningText={"Başarısız"}
-                        // isReadonly={true}
-                        // inputLabel={"Ad"}
-                        // isVerticalLabel={false}
-                    />
-                </Row>
-                
+            <div id="canvas-container">
 
-
-
-
-
-            </>
+            </div>
         );
     }
 }
