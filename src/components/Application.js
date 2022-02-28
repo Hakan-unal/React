@@ -7,7 +7,9 @@ import Switch from "./applications/switch";
 import MemoryGame from "./applications/memoryGame";
 import Calculator from "./applications/calculator";
 
-
+const cardPadding = {
+  padding: 35
+}
 export default class Application extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +39,7 @@ export default class Application extends Component {
             lg={{ span: 4 }}
             xl={{ span: 3 }}
           >
-            <Card>
+            <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src="https://play-lh.googleusercontent.com/tzd1ewmTpFsQdSFHPwVwG-jARqimlMhX8jCWKWI0gvWQsq8FJnG98bJzLGPdGaBFw21l=s360-rw" />
               <Card.Body>
                 <Card.Title>KFC GIDA</Card.Title>
@@ -62,7 +64,7 @@ export default class Application extends Component {
             lg={{ span: 4 }}
             xl={{ span: 3 }}
           >
-            <Card>
+            <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src="https://play-lh.googleusercontent.com/tzd1ewmTpFsQdSFHPwVwG-jARqimlMhX8jCWKWI0gvWQsq8FJnG98bJzLGPdGaBFw21l=s360-rw" />
               <Card.Body>
                 <Card.Title>KFC GIDA</Card.Title>
@@ -88,7 +90,7 @@ export default class Application extends Component {
             lg={{ span: 4 }}
             xl={{ span: 3 }}
           >
-            <Card>
+            <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src="https://play-lh.googleusercontent.com/uvANNHshsAPG874Oh2idH-id2xB5HvAoq4GF4b2RUPW1hvGP8ATkuZr751tXFyAAMxI=s360-rw" />
               <Card.Body>
                 <Card.Title>TODO APP</Card.Title>
@@ -114,7 +116,7 @@ export default class Application extends Component {
             lg={{ span: 4 }}
             xl={{ span: 3 }}
           >
-            <Card>
+            <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src="https://files.sikayetvar.com/lg/cmp/15/155920.png?1614947557" />
               <Card.Body>
                 <Card.Title>IN-LINE</Card.Title>
@@ -140,7 +142,7 @@ export default class Application extends Component {
             lg={{ span: 4 }}
             xl={{ span: 3 }}
           >
-            <Card>
+            <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src="https://media-exp1.licdn.com/dms/image/C4E0BAQE5s2GA-JIQng/company-logo_200_200/0/1603700990543?e=2159024400&v=beta&t=SkfWkrLvYYthQteE1_sDXtxgRHR9DY3RrD5d3qFO_4o" />
               <Card.Body>
                 <Card.Title>DUYUROOM</Card.Title>
@@ -167,7 +169,7 @@ export default class Application extends Component {
             lg={{ span: 4 }}
             xl={{ span: 3 }}
           >
-            <Card>
+            <Card style={cardPadding}>
               <Card.Img variant="top" src="https://files.sikayetvar.com/lg/cmp/15/155920.png?1614947557" width={100} height={150} />
               <Card.Body>
                 <Card.Title>EXTRANET</Card.Title>
@@ -178,6 +180,33 @@ export default class Application extends Component {
                 <Button
                   variant="outline-primary"
                   href="https://inline-extranet.devtagon.com/"
+                >
+                  Show
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+
+
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img variant="top" src="https://app.promodex.io/static/media/Promodex-350x195-cropped.a4dea54a.png" width={100} height={150} />
+              <Card.Body>
+                <Card.Title>PROMODEX</Card.Title>
+                <hr />
+                <Card.Text>
+                  Blockchain project
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://app.promodex.io/"
                 >
                   Show
                 </Button>
