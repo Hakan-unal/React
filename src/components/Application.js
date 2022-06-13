@@ -6,7 +6,7 @@ import Covid from "./applications/covid";
 import Switch from "./applications/switch";
 import MemoryGame from "./applications/memoryGame";
 import Calculator from "./applications/calculator";
-
+import hdsLogo from "..//hdsDarkLogo.png"
 const cardPadding = {
   padding: 35
 }
@@ -32,6 +32,30 @@ export default class Application extends Component {
     return (
       <>
         <Row className="mt-5 mx-3">
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src={hdsLogo} />
+              <Card.Body>
+                <Card.Title>HDS</Card.Title>
+                <hr />
+                <Card.Text>
+                  React web application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://hds.devtagon.com"
+                >
+                  Show
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col
             className="mt-2"
             sm={{ span: 12 }}
