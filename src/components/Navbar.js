@@ -19,7 +19,6 @@ export default class App extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href="https://git.devtagon.com/Hakan-unal"><AiFillGitlab size={55} color="black" title="Gitlab" /></Nav.Link>
                             <Nav.Link href="https://github.com/Hakan-unal"><AiOutlineGithub size={55} color="black" title="Github" /></Nav.Link>
                             <Nav.Link href="https://www.linkedin.com/in/hakan-unal/"><AiFillLinkedin size={55} color="black" title="Linkedin" /></Nav.Link>
                         </Nav>
