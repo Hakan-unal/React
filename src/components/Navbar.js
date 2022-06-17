@@ -2,7 +2,7 @@ import '../App.css';
 import { Navbar, Nav, Badge } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from "react";
-import { AiOutlineGithub, AiFillLinkedin, AiFillGitlab } from "react-icons/ai";
+import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 export default class App extends Component {
     constructor(props) {
         super(props);
