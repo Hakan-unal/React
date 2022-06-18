@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import { Nav } from 'react-bootstrap';
 import AboutMe from './AboutMe';
 import Application from './Application';
+import Demos from './Demos';
+
 export default class App extends Component {
     constructor(props) {
         super(props);
@@ -25,9 +27,11 @@ export default class App extends Component {
                         <Nav.Link eventKey="aboutMe" className="text-dark lead">About Me</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="application" className="text-dark lead">Applications</Nav.Link>
+                        <Nav.Link eventKey="application" className="text-dark lead">Projects</Nav.Link>
                     </Nav.Item>
-
+                    <Nav.Item>
+                        <Nav.Link eventKey="demos" className="text-dark lead">Demos</Nav.Link>
+                    </Nav.Item>
 
                 </Nav>
 
@@ -40,7 +44,10 @@ export default class App extends Component {
                     (this.state.activeKey === "application") ?
                         <Application />
                         :
-                        null
+                        (this.state.activeKey === "demos") ?
+                            <Demos />
+                            :
+                            null
                 }
             </>
         );
