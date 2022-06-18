@@ -52,7 +52,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://weg-demo.vercel.app/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -76,7 +76,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://hakanunal.vercel.app/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -102,7 +102,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://nextjs-chat-lovat-mu.vercel.app/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -127,7 +127,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://gatsbytestportfolio.vercel.app/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -153,7 +153,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://socket-pink.vercel.app/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>

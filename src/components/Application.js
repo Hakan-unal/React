@@ -51,7 +51,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://hds.devtagon.com"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -75,7 +75,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://play.google.com/store/apps/details?id=com.extranet&hl=tr&gl=US"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -101,7 +101,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://apps.apple.com/tr/app/kfc-%C3%BCretici-bilgi-takip/id1586120006?l=tr"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -126,7 +126,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://play.google.com/store/apps/details?id=com.mytodoapp123"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -152,7 +152,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://inline.devtagon.com/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -205,7 +205,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://inline-extranet.devtagon.com/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -232,7 +232,7 @@ export default class Application extends Component {
                   variant="outline-primary"
                   href="https://app.promodex.io/"
                 >
-                  Show
+                  Demo
                 </Button>
               </Card.Body>
             </Card>
