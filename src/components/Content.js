@@ -30,7 +30,7 @@ export default class App extends Component {
                         <Nav.Link eventKey="application" className="text-dark lead">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="demos" className="text-dark lead">Demos</Nav.Link>
+                        <Nav.Link eventKey="demos" className="text-dark lead">Vercel Demos</Nav.Link>
                     </Nav.Item>
 
                 </Nav>
