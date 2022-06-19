@@ -214,6 +214,32 @@ export default class Application extends Component {
 
 
 
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src={vercel} />
+              <Card.Body>
+                <Card.Title>Winterfell</Card.Title>
+                <hr />
+                <Card.Text>
+                  Next.js, React.js, MongoDB application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://winterfell-be.vercel.app/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+
 
 
 
