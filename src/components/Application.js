@@ -45,7 +45,7 @@ export default class Application extends Component {
                 <Card.Title>HDS</Card.Title>
                 <hr />
                 <Card.Text>
-                  React web application
+                  React.js, Redux.js application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
@@ -69,7 +69,7 @@ export default class Application extends Component {
                 <Card.Title>KFC GIDA</Card.Title>
                 <hr />
                 <Card.Text>
-                  Mobile android application
+                  React Native application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
@@ -95,7 +95,7 @@ export default class Application extends Component {
                 <hr />
 
                 <Card.Text>
-                  Mobile ios application
+                  React Native application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
@@ -120,7 +120,7 @@ export default class Application extends Component {
                 <Card.Title>TODO APP</Card.Title>
                 <hr />
                 <Card.Text>
-                  Mobile android application
+                  React Native application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
@@ -146,7 +146,7 @@ export default class Application extends Component {
                 <Card.Title>IN-LINE</Card.Title>
                 <hr />
                 <Card.Text>
-                  React web application
+                  React.js, Redux.js application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
@@ -172,7 +172,7 @@ export default class Application extends Component {
                 <Card.Title>DUYUROOM</Card.Title>
                 <hr />
                 <Card.Text>
-                  React web application
+                  React.js, Redux.js application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
@@ -199,7 +199,7 @@ export default class Application extends Component {
                 <Card.Title>EXTRANET</Card.Title>
                 <hr />
                 <Card.Text>
-                  React web application
+                  React.js, Redux.js application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
@@ -226,7 +226,7 @@ export default class Application extends Component {
                 <Card.Title>PROMODEX</Card.Title>
                 <hr />
                 <Card.Text>
-                  Blockchain project
+                  Web3.js, Blockchain application
                 </Card.Text>
                 <Button
                   variant="outline-primary"
