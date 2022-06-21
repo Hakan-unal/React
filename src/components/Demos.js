@@ -44,6 +44,32 @@ export default class Application extends Component {
             <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src={vercel} />
               <Card.Body>
+                <Card.Title>Exchange Rates
+                </Card.Title>
+                <hr />
+                <Card.Text>
+                  React.js application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://exchange-rate-j0wzck01n-hakan-unal.vercel.app/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src={vercel} />
+              <Card.Body>
                 <Card.Title>Invent Analytics Frontend Developer Case
                 </Card.Title>
                 <hr />
