@@ -79,7 +79,7 @@ export default class Application extends Component {
                 </Card.Text>
                 <Button
                   variant="outline-primary"
-                  href="https://exchange-rate-j0wzck01n-hakan-unal.vercel.app/"
+                  href="https://exchange-rate-amber.vercel.app/"
                 >
                   Demo
                 </Button>
