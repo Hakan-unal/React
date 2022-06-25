@@ -11,6 +11,9 @@ import vercel from "../assets/image/vercel.png"
 const cardPadding = {
   padding: 35
 }
+
+
+
 export default class Application extends Component {
   constructor(props) {
     super(props);
@@ -35,7 +38,31 @@ export default class Application extends Component {
       <>
         <Row className="mt-5 mx-3">
 
-
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src={vercel} />
+              <Card.Body>
+                <Card.Title>CRU'D Services
+                </Card.Title>
+                <hr />
+                <Card.Text>
+                  Firebase, React.js application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://firebase-cru-d-git-main-hakan-unal.vercel.app/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col
             className="mt-2"
             sm={{ span: 12 }}
