@@ -48,6 +48,32 @@ export default class Application extends Component {
             <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src={vercel} />
               <Card.Body>
+                <Card.Title>No 21 Case
+                </Card.Title>
+                <hr />
+                <Card.Text>
+                  React.js application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://no-21-case.vercel.app/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src={vercel} />
+              <Card.Body>
                 <Card.Title>CRU'D Services
                 </Card.Title>
                 <hr />
