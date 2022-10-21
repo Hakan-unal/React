@@ -108,7 +108,7 @@ export default class Application extends Component {
             </Card>
           </Col>
 
-          <Col
+          {/* <Col
             className="mt-2"
             sm={{ span: 12 }}
             md={{ span: 6 }}
@@ -131,7 +131,7 @@ export default class Application extends Component {
                 </Button>
               </Card.Body>
             </Card>
-          </Col>
+          </Col> */}
 
           <Col
             className="mt-2"
@@ -147,7 +147,7 @@ export default class Application extends Component {
                 <hr />
 
                 <Card.Text>
-                  React Native application
+                  React Native application (IOS)
                 </Card.Text>
                 <Button
                   variant="outline-primary"
