@@ -91,6 +91,31 @@ export default class Application extends Component {
             xl={{ span: 3 }}
           >
             <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src="https://media-exp1.licdn.com/dms/image/C4E0BAQE5s2GA-JIQng/company-logo_200_200/0/1603700990543?e=2159024400&v=beta&t=SkfWkrLvYYthQteE1_sDXtxgRHR9DY3RrD5d3qFO_4o" />
+              <Card.Body>
+                <Card.Title>DUYUROOM</Card.Title>
+                <hr />
+                <Card.Text>
+                  React.js, Redux.js application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://demo.duyuroom.com/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src="https://play-lh.googleusercontent.com/tzd1ewmTpFsQdSFHPwVwG-jARqimlMhX8jCWKWI0gvWQsq8FJnG98bJzLGPdGaBFw21l=s360-rw" />
               <Card.Body>
                 <Card.Title>KFC GIDA</Card.Title>
@@ -186,30 +211,7 @@ export default class Application extends Component {
           </Col>
 
 
-          <Col
-            className="mt-2"
-            sm={{ span: 12 }}
-            md={{ span: 6 }}
-            lg={{ span: 4 }}
-            xl={{ span: 3 }}
-          >
-            <Card style={cardPadding}>
-              <Card.Img width={100} height={150} variant="top" src="https://media-exp1.licdn.com/dms/image/C4E0BAQE5s2GA-JIQng/company-logo_200_200/0/1603700990543?e=2159024400&v=beta&t=SkfWkrLvYYthQteE1_sDXtxgRHR9DY3RrD5d3qFO_4o" />
-              <Card.Body>
-                <Card.Title>DUYUROOM</Card.Title>
-                <hr />
-                <Card.Text>
-                  React.js, Redux.js application
-                </Card.Text>
-                <Button
-                  variant="outline-primary"
-                  href="https://demo.duyuroom.com/"
-                >
-                  Demo
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
+
 
 
 
