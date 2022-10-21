@@ -56,6 +56,33 @@ export default class Application extends Component {
               </Card.Body>
             </Card>
           </Col>
+
+
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img variant="top" src="https://app.promodex.io/static/media/Promodex-350x195-cropped.a4dea54a.png" width={100} height={150} />
+              <Card.Body>
+                <Card.Title>PROMODEX</Card.Title>
+                <hr />
+                <Card.Text>
+                  Web3.js, Blockchain application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://app.promodex.io/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
           <Col
             className="mt-2"
             sm={{ span: 12 }}
@@ -213,30 +240,6 @@ export default class Application extends Component {
 
 
 
-          <Col
-            className="mt-2"
-            sm={{ span: 12 }}
-            md={{ span: 6 }}
-            lg={{ span: 4 }}
-            xl={{ span: 3 }}
-          >
-            <Card style={cardPadding}>
-              <Card.Img variant="top" src="https://app.promodex.io/static/media/Promodex-350x195-cropped.a4dea54a.png" width={100} height={150} />
-              <Card.Body>
-                <Card.Title>PROMODEX</Card.Title>
-                <hr />
-                <Card.Text>
-                  Web3.js, Blockchain application
-                </Card.Text>
-                <Button
-                  variant="outline-primary"
-                  href="https://app.promodex.io/"
-                >
-                  Demo
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
 
 
 
