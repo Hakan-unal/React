@@ -14,7 +14,7 @@ export default class App extends Component {
             <>
                 <Navbar bg="white" expand="lg">
                     <Navbar.Brand>
-                        <h5> <Badge variant="white">Hakan Ünal <br /> Sr. Software Developer at Devtagon</Badge></h5>
+                        <h5> <Badge variant="white">Hakan Ünal <br /> Sr. Software Developer</Badge></h5>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
