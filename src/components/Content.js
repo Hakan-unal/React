@@ -5,6 +5,8 @@ import { Nav } from 'react-bootstrap';
 import AboutMe from './AboutMe';
 import Application from './Application';
 import Demos from './Demos';
+import Components from './Components';
+
 
 export default class App extends Component {
     constructor(props) {
@@ -32,7 +34,9 @@ export default class App extends Component {
                     <Nav.Item>
                         <Nav.Link eventKey="demos" className="text-dark lead">Vercel Demos</Nav.Link>
                     </Nav.Item>
-
+                    <Nav.Item>
+                        <Nav.Link eventKey="components" className="text-dark lead">Components</Nav.Link>
+                    </Nav.Item>
                 </Nav>
 
 
@@ -47,7 +51,10 @@ export default class App extends Component {
                         (this.state.activeKey === "demos") ?
                             <Demos />
                             :
-                            null
+                            (this.state.activeKey === "components") ?
+                                <Components />
+                                :
+                                null
                 }
             </>
         );

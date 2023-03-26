@@ -13,12 +13,12 @@ export default class AboutMe extends Component {
 
             <div className="h3 text-dark text-center mt-5 mx-5">
 
-                Hey&#x1F44B;, It's Hakan. Currently working as Software Developer.
+                Hey&#x1F44B;, It's Hakan. Currently working as Software Developer at <a style={{ color: "#452170" }} href="https://innovance.com.tr/">Innovance</a>.
                 Here you can learn more about me and my ideas.
-                <div  >
+                < div >
                     <img alt="baby yoda" style={{ width: 300, borderRadius: 20 }} src="https://www.macleans.ca/wp-content/uploads/2019/11/BABY-YODA-MANDALORIAN-NOV19-810x445.jpg" />
-                </div>
-            </div>
+                </div >
+            </div >
 
 
         );
