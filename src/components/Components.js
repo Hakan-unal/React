@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
-import { Card, Button, Row, Col, Modal } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
+import vercel from "../assets/image/vercel.png"
+
 const cardPadding = {
     padding: 35
 }
@@ -24,7 +26,7 @@ export default class Components extends Component {
                 xl={{ span: 3 }}
             >
                 <Card style={cardPadding}>
-                    <Card.Img width={100} height={150} variant="top" src={"blabla"} />
+                    <Card.Img width={100} height={150} variant="top" src={vercel} />
 
                     <Card.Body>
                         <Card.Title>Custom Table</Card.Title>
