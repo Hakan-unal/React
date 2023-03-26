@@ -27,7 +27,6 @@ export default class Components extends Component {
             >
                 <Card style={cardPadding}>
                     <Card.Img width={100} height={150} variant="top" src={vercel} />
-
                     <Card.Body>
                         <Card.Title>Custom Table</Card.Title>
                         <hr />
