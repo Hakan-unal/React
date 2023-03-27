@@ -35,7 +35,7 @@ export default class Components extends Component {
                         </Card.Text>
                         <Button
                             variant="outline-primary"
-                            href="https://hds.devtagon.com"
+                            href="https://custom-table-three.vercel.app/"
                         >
                             Demo
                         </Button>
