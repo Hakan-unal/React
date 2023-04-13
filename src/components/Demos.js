@@ -37,7 +37,30 @@ export default class Application extends Component {
     return (
       <>
         <Row className="mt-5 mx-3">
-
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src={vercel} />
+              <Card.Body>
+                <Card.Title>Sound Box</Card.Title>
+                <hr />
+                <Card.Text>
+                  React.js application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://soundbox-puce.vercel.app/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col
             className="mt-2"
             sm={{ span: 12 }}
