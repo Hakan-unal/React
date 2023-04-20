@@ -47,6 +47,30 @@ export default class Application extends Component {
             <Card style={cardPadding}>
               <Card.Img width={100} height={150} variant="top" src={vercel} />
               <Card.Body>
+                <Card.Title>Flowers</Card.Title>
+                <hr />
+                <Card.Text>
+                  React.js, Canvas application
+                </Card.Text>
+                <Button
+                  variant="outline-primary"
+                  href="https://flowers-tau.vercel.app/"
+                >
+                  Demo
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col
+            className="mt-2"
+            sm={{ span: 12 }}
+            md={{ span: 6 }}
+            lg={{ span: 4 }}
+            xl={{ span: 3 }}
+          >
+            <Card style={cardPadding}>
+              <Card.Img width={100} height={150} variant="top" src={vercel} />
+              <Card.Body>
                 <Card.Title>Push Notification</Card.Title>
                 <hr />
                 <Card.Text>
