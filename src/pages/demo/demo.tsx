@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Card, Col, Divider, Row } from 'antd';
 const Demos: React.FC = () => {
     const projects = [
+        { title: "Horoscope", description: "React.js, Antd, TypeScript", link: "https://horoscope-orcin.vercel.app/", code: "https://github.com/Hakan-unal/horoscope" },
         { title: "Flowers", description: "React.js, Canvas, Antd, TypeScript", link: "https://flowers-tau.vercel.app/", code: "https://github.com/Hakan-unal/flowers" },
         { title: "Push Notification", description: "React.js, Antd, TypeScript", link: "https://chat-push-notification-one.vercel.app/", code: "https://github.com/Hakan-unal/chatPushNotification" },
         { title: "Sound Box", description: "React.js, Antd, TypeScript", link: "https://soundbox-puce.vercel.app/", code: "https://github.com/Hakan-unal/soundbox" },
