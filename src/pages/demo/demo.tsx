@@ -27,7 +27,7 @@ const Demos: React.FC = () => {
         <Row>
             {projects.map((obj, index) => {
                 return (
-                    <Col key={index} xs={24} sm={12} lg={8} xl={6} xxl={2} >
+                    <Col key={index} xs={24} sm={12} lg={8} xl={6} xxl={4} >
                         <Card
                             bordered={false}
                             style={{ margin: 10, padding: 5 }}
