@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, Divider, Row } from 'antd';
+import { Button, Card, Col, Divider, Popover, Row } from 'antd';
 
 type Element = {
     title: string;
@@ -42,7 +42,9 @@ const Demos: React.FC = () => {
                             bordered={false}
                             style={{ margin: 10, padding: 5 }}
                             hoverable
-                            title={obj.title}
+                            title={<Popover content={obj.title}>
+                                {obj.title}
+                            </Popover>}
                             cover={
                                 <img alt="vercel" src="https://mms.businesswire.com/media/20211123005573/en/929867/23/vercel-logo-freelogovectors.net.jpg" />
                             }
