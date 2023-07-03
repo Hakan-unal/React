@@ -1,7 +1,15 @@
 import React from 'react';
 import { Button, Card, Col, Divider, Row } from 'antd';
+
+type Element = {
+    title: string;
+    description: string;
+    link: string;
+    code: string | null;
+}
+
 const Demos: React.FC = () => {
-    const projects = [
+    const demos: Array<Element> = [
         { title: "Pet Reminder", description: "React.js, Antd, TypeScript", link: "https://bot-vitest.vercel.app/", code: "https://github.com/Hakan-unal/bot-vitest" },
         { title: "Memory Game", description: "React.js, Antd, TypeScript", link: "https://pandora-six-sigma.vercel.app/", code: "https://github.com/Hakan-unal/pandora" },
         { title: "Horoscope", description: "React.js, Antd, TypeScript", link: "https://horoscope-orcin.vercel.app/", code: "https://github.com/Hakan-unal/horoscope" },
@@ -27,7 +35,7 @@ const Demos: React.FC = () => {
     ]
     return (<Card style={{ textAlign: "center" }} >
         <Row>
-            {projects.map((obj, index) => {
+            {demos.map((obj, index) => {
                 return (
                     <Col key={index} xs={24} sm={12} lg={8} xl={6} xxl={4} >
                         <Card
@@ -43,8 +51,8 @@ const Demos: React.FC = () => {
                             {obj.description}
 
                             <Divider />
-                            {obj.link && <Button target='_blank' href={obj.link}>Live</Button>}
-                            {obj.code && <Button target='_blank' style={{ marginLeft: 10 }} href={obj.code}>Code</Button>}
+                            {obj.link && <Button rel="noopener" target='_blank' href={obj.link}>Live</Button>}
+                            {obj.code && <Button rel="noopener" target='_blank' style={{ marginLeft: 10 }} href={obj.code}>Code</Button>}
                         </Card>
                     </Col>
                 )

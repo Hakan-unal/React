@@ -1,9 +1,8 @@
 
 import { useState } from 'react';
-import { Button, Divider, MenuProps, MenuTheme, Space, } from 'antd';
-import { AiOutlineHome, AiOutlineInsertRowBelow, AiTwotoneBuild, AiOutlineFilePdf } from "react-icons/ai";
+import { MenuProps, MenuTheme } from 'antd';
+import { AiOutlineHome, AiOutlineInsertRowBelow, AiTwotoneBuild, AiOutlineFilePdf, AiOutlineCopy, AiOutlineFolderOpen } from "react-icons/ai";
 import { TbBrandVercel } from "react-icons/tb";
-import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 import { Layout, Menu, Switch } from "antd"
 import { Link } from 'react-router-dom';
@@ -35,6 +34,10 @@ const items: MenuItem[] = [
   getItem(<Link to="/demo">Vercel Demos</Link>, 'demo', <TbBrandVercel />),
   getItem(<Link to="/portfolio">Portfolyo</Link>, 'portfolio', <AiOutlineFilePdf />),
   getItem(<Link to="/components">Components</Link>, 'components', <AiOutlineInsertRowBelow />),
+  getItem(<Link to="/clones">Clones</Link>, 'clones', <AiOutlineCopy />),
+  getItem(<Link to="/articles">Articles</Link>, 'articles', <AiOutlineFolderOpen />),
+
+
 ];
 
 
@@ -60,15 +63,7 @@ const Sidebar: React.FC = (...props) => {
         unCheckedChildren="Light"
         style={{ marginBottom: 10 }}
       />
-      <Divider />
 
-      <Space direction='horizontal' size={5}>
-
-        <Button target='_blank' href={"https://www.linkedin.com/in/hakan-unal/"} icon={<AiOutlineLinkedin color='blue' size={25} />} />
-        <Button target='_blank' href={"https://github.com/Hakan-unal"} icon={<AiOutlineGithub size={25} />} />
-
-      </Space>
-      <Divider />
       <Menu
         onMouseEnter={() => setCollapsed(false)}
         onMouseLeave={() => setCollapsed(true)}

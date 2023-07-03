@@ -16,7 +16,7 @@ const Page404 = (props: any) => {
             />
           }
         >
-          Hey&#x1F44B;, It's Hakan. Currently working as Software Engineer at <a style={{ color: "#452170" }} href="https://innovance.com.tr/">Innovance</a>.
+          Hey&#x1F44B;, It's Hakan. Currently working as Software Engineer at <a rel="noopener" target="_blank" style={{ color: "#452170" }} href="https://innovance.com.tr/">Innovance</a>.
           Here you can learn more about me and my ideas.</Card>
       </Col>
     </Row>
