@@ -10,6 +10,8 @@ import Portfolio from "./pages/portfolio/portfolio"
 import Projects from "./pages/projects/projects"
 import Clones from "./pages/clones/clones"
 import Articles from "./pages/articles/articles"
+import Certificate from "./pages/certificate/certificate"
+
 import Header from "./components/layout/header";
 
 const { Content } = Layout;
@@ -43,14 +45,13 @@ const App: React.FC = () => {
           <Route path="/projects" Component={Projects}></Route>
           <Route path="/clones" Component={Clones}></Route>
           <Route path="/articles" Component={Articles}></Route>
-
-
+          <Route path="/certificate" Component={Certificate}></Route>
           <Route path="*" Component={page404}></Route>
         </Routes>
 
       </Content>
       {
-        // optional header
+        // optional Footer
         // <Footer><Footer />
       }
 

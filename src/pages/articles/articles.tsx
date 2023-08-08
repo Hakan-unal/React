@@ -7,7 +7,7 @@ type Element = {
 }
 
 const Articles: React.FC = () => {
-    const components: Array<Element> = [
+    const articles: Array<Element> = [
         { title: "What is Single Page Application", link: "https://spa-gamma-woad.vercel.app/" },
         { title: "Class vs Functional Component", link: "https://class-vs-functional.vercel.app/" },
         { title: "Using the File System Module in Node.js", link: "https://file-system-module.vercel.app/" },
@@ -16,7 +16,7 @@ const Articles: React.FC = () => {
     ]
     return (<Card style={{ textAlign: "center" }} >
         <Row>
-            {components.map((obj, index) => {
+            {articles.map((obj, index) => {
                 return (
                     <Col key={index} xs={24} sm={12} lg={8} xl={6} xxl={4} >
                         <Card
