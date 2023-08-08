@@ -30,7 +30,7 @@ const items: MenuItem[] = [
   // {
   //   type: 'divider',
   // },
-  getItem(<Link to="/projects">Projeler</Link>, 'projects', <AiTwotoneBuild />),
+  getItem(<Link to="/projects">Projects</Link>, 'projects', <AiTwotoneBuild />),
   getItem(<Link to="/demo">Vercel Demos</Link>, 'demo', <TbBrandVercel />),
   getItem(<Link to="/portfolio">Portfolyo</Link>, 'portfolio', <AiOutlineFilePdf />),
   getItem(<Link to="/components">Components</Link>, 'components', <AiOutlineInsertRowBelow />),
