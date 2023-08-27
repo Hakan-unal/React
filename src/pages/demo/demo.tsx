@@ -10,6 +10,8 @@ type Element = {
 
 const Demos: React.FC = () => {
     const demos: Array<Element> = [
+        { title: "Product CRUD Sample", description: "React.js, Antd, TypeScript, Axios", link: "https://product-shop-pi.vercel.app/", code: "https://github.com/Hakan-unal/product-shop" },
+        { title: "Main DB", description: "Node.js, Express.js, PostgreSQL, Supabase ", link: "https://supabase-puce.vercel.app/", code: "https://github.com/Hakan-unal/supabase" },
         { title: "Pdf Creator", description: "Node.js, Express.js, TypeScript", link: "https://pdf-generator-pi.vercel.app/", code: "https://github.com/Hakan-unal/pdf-generator" },
         { title: "Pet Reminder", description: "React.js, Antd, TypeScript", link: "https://bot-vitest.vercel.app/", code: "https://github.com/Hakan-unal/bot-vitest" },
         { title: "Memory Game", description: "React.js, Antd, TypeScript", link: "https://pandora-six-sigma.vercel.app/", code: "https://github.com/Hakan-unal/pandora" },
