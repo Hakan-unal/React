@@ -8,7 +8,8 @@ type Element = {
 
 const Articles: React.FC = () => {
     const articles: Array<Element> = [
-        { title: "Vercel Application Publish", link: "https://vercel-rho-gules.vercel.app/" },
+        { title: "SQL-NoSQL Databases", link: "https://sql-nosql-hakan-unal.vercel.app/" },
+        { title: "Vercel Application Publish", link: "https://vercel-hakan-unal.vercel.app/" },
         { title: "Create Read Update Delete (CRUD)", link: "https://hakanunal-crud.vercel.app/" },
         { title: "Monolithic vs Microservices Architecture", link: "https://monolith-mcroservices.vercel.app" },
         { title: "What is Single Page Application", link: "https://spa-gamma-woad.vercel.app" },
