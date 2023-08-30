@@ -14,7 +14,6 @@ const Articles: React.FC = () => {
         { title: "What is Single Page Application", link: "https://spa-gamma-woad.vercel.app" },
         { title: "Using the File System Module in Node.js", link: "https://file-system-module.vercel.app" },
         { title: "Math, Date, String and Number Classes in JavaScript", link: "https://javascript-class.vercel.app" },
-        { title: "Class vs Functional Component", link: "https://class-vs-functional.vercel.app" },
 
     ]
     return (<Card style={{ textAlign: "center" }} >
