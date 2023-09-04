@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, Card, Col, Divider, Row, Modal } from 'antd';
-import certificate from "../../assets/sertifika.pdf";
-
+import vercel from "../../assets/vercel.jpg"
 
 type Element = {
     title: string;
@@ -9,16 +8,11 @@ type Element = {
 }
 
 const Certificate: React.FC = () => {
-    const [open, setOpen] = useState<boolean>(false)
-    const [current, setCurrent] = useState<string | undefined>(undefined)
     const certificates: Array<Element> = [
-        { title: "Cenga Project Competition", link: certificate },
+        { title: "Cenga Project Competition", link: "https://cenga.vercel.app/" },
     ]
 
-    const handleModal = (obj: any) => {
-        setOpen(!open)
-        setCurrent(obj)
-    }
+
     return (<Card style={{ textAlign: "center" }} >
         <Row>
             {certificates.map((obj, index) => {
@@ -29,23 +23,20 @@ const Certificate: React.FC = () => {
                             style={{ margin: 10, padding: 5 }}
                             hoverable
                             cover={
-                                <img alt="vercel" src="https://mms.businesswire.com/media/20211123005573/en/929867/23/vercel-logo-freelogovectors.net.jpg" />
+                                <img alt="vercel" src={vercel} />
                             }
                         >
                             {obj.title}
 
                             <Divider />
-                            {obj.link && <Button onClick={() => handleModal(obj.link)}>Show</Button>}
+                            {obj.link && <Button rel="noopener" target='_blank' href={obj.link}>Show</Button>}
                         </Card>
                     </Col>
                 )
             })}
         </Row>
 
-        <Modal bodyStyle={{ height: "65vh" }}
-            width={"80%"} footer={null} onCancel={handleModal} open={open} >
-            <object data={current} type="application/pdf" width="100%" height="100%" />
-        </Modal>
+
     </Card>
 
     )
