@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Col, Divider, Row } from 'antd';
+import vercel from "../../assets/vercel.jpg"
 
 type Element = {
     title: string;
@@ -24,7 +25,7 @@ const Components: React.FC = () => {
                             hoverable
                             title={obj.title}
                             cover={
-                                <img alt="vercel" src="https://mms.businesswire.com/media/20211123005573/en/929867/23/vercel-logo-freelogovectors.net.jpg" />
+                                <img alt="vercel" src={vercel} />
                             }
                         >
 
