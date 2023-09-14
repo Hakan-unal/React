@@ -11,6 +11,7 @@ type Element = {
 
 const Demos: React.FC = () => {
     const demos: Array<Element> = [
+        { title: "ChatGPT Babür", description: "OpenAI, Node.js, Express.js React.js, Antd, TypeScript", link: "https://babur.vercel.app/", code: "https://github.com/Hakan-unal/babur" },
         { title: "THY Case Study", description: "React.js, Antd, TypeScript", link: "https://thy-demo-hakan-unal.vercel.app/", code: "https://github.com/Hakan-unal/thy-interview" },
         { title: "Product CRUD Sample", description: "React.js, Antd, TypeScript, Axios", link: "https://product-shop-pi.vercel.app/", code: "https://github.com/Hakan-unal/product-shop" },
         { title: "Main DB", description: "Node.js, Express.js, PostgreSQL, Supabase ", link: "https://supabase-puce.vercel.app/", code: "https://github.com/Hakan-unal/supabase" },
