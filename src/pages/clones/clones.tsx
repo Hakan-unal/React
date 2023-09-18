@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, Divider, Result, Row } from 'antd';
+import { Result } from 'antd';
 import { GiRabbit } from "react-icons/gi";
 
 

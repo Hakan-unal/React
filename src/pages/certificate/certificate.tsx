@@ -1,17 +1,10 @@
 import React from 'react';
-import { Button, Card, Col, Divider, Row, Modal } from 'antd';
+import { Button, Card, Col, Divider, Row } from 'antd';
 import vercel from "../../assets/vercel.jpg"
+import { certificates } from '../../staticData/data';
 
-type Element = {
-    title: string;
-    link: string;
-}
 
 const Certificate: React.FC = () => {
-    const certificates: Array<Element> = [
-        { title: "Cenga Project Competition", link: "https://cenga.vercel.app/" },
-    ]
-
 
     return (<Card style={{ textAlign: "center" }} >
         <Row>

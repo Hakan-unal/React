@@ -1,19 +1,11 @@
 import React from 'react';
 import { Button, Card, Col, Divider, Row } from 'antd';
 import vercel from "../../assets/vercel.jpg"
+import { components } from "../../staticData/data"
 
-type Element = {
-    title: string;
-    description: string;
-    link: string;
-    code: string;
-}
 
 const Components: React.FC = () => {
-    const components: Array<Element> = [
-        { title: "Custom Table", description: "React.js, Antd, TypeScript", link: "https://custom-table-three.vercel.app/", code: "https://github.com/Hakan-unal/Custom-Table" },
 
-    ]
     return (<Card style={{ textAlign: "center" }} >
         <Row>
             {components.map((obj, index) => {
