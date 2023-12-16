@@ -284,6 +284,12 @@ export const components: Array<ComponentObjType> = [
       link: "https://custom-table-three.vercel.app/",
       code: "https://github.com/Hakan-unal/Custom-Table",
    },
+   {
+      title: "Custom Transfer",
+      description: "React.js, TypeScript",
+      link: "https://transfer-nine.vercel.app/",
+      code: "https://github.com/Hakan-unal/transfer",
+   },
 ];
 export const articles: Array<ArticleObjType> = [
    {
