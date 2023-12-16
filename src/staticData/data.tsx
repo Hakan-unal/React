@@ -10,7 +10,7 @@ import {
 
 export const demos: Array<DemoObjType> = [
    {
-      title: "Custom Translator",
+      title: "Translator",
       description: "React.js, Antd, TypeScript",
       link: "https://translation-dusky.vercel.app/",
       code: "https://github.com/Hakan-unal/translation",
@@ -279,16 +279,22 @@ export const certificates: Array<CertificateObjType> = [
 
 export const components: Array<ComponentObjType> = [
    {
-      title: "Custom Table",
-      description: "React.js, Antd, TypeScript",
-      link: "https://custom-table-three.vercel.app/",
-      code: "https://github.com/Hakan-unal/Custom-Table",
-   },
-   {
       title: "Custom Transfer",
       description: "React.js, TypeScript",
       link: "https://transfer-nine.vercel.app/",
       code: "https://github.com/Hakan-unal/transfer",
+   },
+   {
+      title: "Custom Translator",
+      description: "React.js, Antd, TypeScript",
+      link: "https://translation-dusky.vercel.app/",
+      code: "https://github.com/Hakan-unal/translation",
+   },
+   {
+      title: "Custom Table",
+      description: "React.js, Antd, TypeScript",
+      link: "https://custom-table-three.vercel.app/",
+      code: "https://github.com/Hakan-unal/Custom-Table",
    },
 ];
 export const articles: Array<ArticleObjType> = [
