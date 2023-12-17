@@ -299,6 +299,10 @@ export const components: Array<ComponentObjType> = [
 ];
 export const articles: Array<ArticleObjType> = [
    {
+      title: "Agile Project Management",
+      link: "https://agile-roan.vercel.app/",
+   },
+   {
       title: "SQL-NoSQL Databases",
       link: "https://sql-nosql-hakan-unal.vercel.app/",
    },
