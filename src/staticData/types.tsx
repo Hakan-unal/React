@@ -39,3 +39,9 @@ export type StatisticObjType = {
     name: string;
     length: number;
 }
+
+export type NpmObjType = {
+    title: string;
+    link: string;
+    code: string;
+}

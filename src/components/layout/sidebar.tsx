@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { MenuProps, MenuTheme } from 'antd';
 import { AiOutlineHome, AiOutlineInsertRowBelow, AiTwotoneBuild, AiOutlineFilePdf, AiOutlineCopy, AiOutlineFolderOpen, AiOutlineFile } from "react-icons/ai";
 import { TbBrandVercel } from "react-icons/tb";
+import { FaNpm } from "react-icons/fa";
 
 import { Layout, Menu, Switch } from "antd"
 import { Link } from 'react-router-dom';
@@ -35,6 +36,7 @@ const items: MenuItem[] = [
   getItem(<Link to="/portfolio">Portfolyo</Link>, 'portfolio', <AiOutlineFilePdf />),
   getItem(<Link to="/components">Components</Link>, 'components', <AiOutlineInsertRowBelow />),
   getItem(<Link to="/clones">Clones</Link>, 'clones', <AiOutlineCopy />),
+  getItem(<Link to="/npm">Npm Packages</Link>, 'npm', <FaNpm />),
   getItem(<Link to="/articles">Articles</Link>, 'articles', <AiOutlineFolderOpen />),
   getItem(<Link to="/certificate">Certificate</Link>, 'certificate', <AiOutlineFile />),
 

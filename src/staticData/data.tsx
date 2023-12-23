@@ -6,6 +6,7 @@ import {
    ComponentObjType,
    ArticleObjType,
    StatisticObjType,
+   NpmObjType
 } from "./types";
 
 export const demos: Array<DemoObjType> = [
@@ -358,3 +359,17 @@ export const statistic: Array<StatisticObjType> = [
       length: articles.length,
    },
 ];
+
+
+export const npmPackages: Array<NpmObjType> = [
+   {
+      title: "@kardinal/whiterabbit",
+      link: "https://www.npmjs.com/package/@kardinal/whiterabbit",
+      code: "https://github.com/Hakan-unal/white-rabbit",
+   },
+   {
+      title: "@kardinal/test",
+      link: "https://www.npmjs.com/package/@kardinal/test",
+      code: "https://github.com/Hakan-unal/npm-test",
+   }
+]
