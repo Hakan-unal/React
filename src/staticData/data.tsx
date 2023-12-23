@@ -333,6 +333,20 @@ export const articles: Array<ArticleObjType> = [
    },
 ];
 
+
+export const npmPackages: Array<NpmObjType> = [
+   {
+      title: "@kardinal/whiterabbit",
+      link: "https://www.npmjs.com/package/@kardinal/whiterabbit",
+      code: "https://github.com/Hakan-unal/white-rabbit",
+   },
+   {
+      title: "@kardinal/test",
+      link: "https://www.npmjs.com/package/@kardinal/test",
+      code: "https://github.com/Hakan-unal/npm-test",
+   }
+]
+
 export const statistic: Array<StatisticObjType> = [
    {
       name: "Demo",
@@ -358,18 +372,10 @@ export const statistic: Array<StatisticObjType> = [
       name: "Article",
       length: articles.length,
    },
+   {
+      name: "Npm Packages",
+      length: npmPackages.length,
+   },
 ];
 
 
-export const npmPackages: Array<NpmObjType> = [
-   {
-      title: "@kardinal/whiterabbit",
-      link: "https://www.npmjs.com/package/@kardinal/whiterabbit",
-      code: "https://github.com/Hakan-unal/white-rabbit",
-   },
-   {
-      title: "@kardinal/test",
-      link: "https://www.npmjs.com/package/@kardinal/test",
-      code: "https://github.com/Hakan-unal/npm-test",
-   }
-]

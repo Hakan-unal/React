@@ -6,7 +6,7 @@ const Home = (props: any) => {
    const StatisticComponent = () => {
       return statistic.map((obj, index) => {
          return (
-            <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
+            <Col key={index} xs={24} sm={12} md={8}  xl={6}>
                <Card bordered={false} hoverable>
                   <Statistic
                      title={obj.name}
