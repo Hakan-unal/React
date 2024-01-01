@@ -11,6 +11,12 @@ import {
 
 export const demos: Array<DemoObjType> = [
    {
+      title: "Sort",
+      description: "React.js, Antd, TypeScript",
+      link: "https://sort-ashen.vercel.app/",
+      code: "https://github.com/Hakan-unal/sort",
+   },
+   {
       title: "Food",
       description: "React.js, Antd, TypeScript",
       link: "https://food-nine-beige.vercel.app/",
