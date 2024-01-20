@@ -11,6 +11,12 @@ import {
 
 export const demos: Array<DemoObjType> = [
   {
+    title: "Flower",
+    description: "React.js, Antd, TypeScript",
+    link: "https://flower-mu-sandy.vercel.app/",
+    code: "https://github.com/Hakan-unal/flower",
+  },
+  {
     title: "Codexist Demo",
     description: "React.js, Antd, TypeScript",
     link: "https://codexist-alpha.vercel.app/",
