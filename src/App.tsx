@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from "./pages/home"
 import page404 from "./pages/404"
 import Sidebar from './components/layout/sidebar';
-import Demo from "./pages/demo"
+import Web from "./pages/web"
 import Components from "./pages/components"
 import Portfolio from "./pages/portfolio"
 import Projects from "./pages/projects"
@@ -12,6 +12,7 @@ import Clones from "./pages/clones"
 import Articles from "./pages/articles"
 import Certificate from "./pages/certificate"
 import Npm from "./pages/npm"
+import Mobile from "./pages/mobile"
 
 import Header from "./components/layout/header";
 
@@ -40,7 +41,8 @@ const App: React.FC = () => {
       >
         <Routes>
           <Route path="/" Component={Home}></Route>
-          <Route path="/demo" Component={Demo}></Route>
+          <Route path="/web" Component={Web}></Route>
+          <Route path="/mobile" Component={Mobile}></Route>
           <Route path="/components" Component={Components}></Route>
           <Route path="/portfolio" Component={Portfolio}></Route>
           <Route path="/projects" Component={Projects}></Route>

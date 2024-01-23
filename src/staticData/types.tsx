@@ -1,10 +1,17 @@
-export type DemoObjType = {
+export type WebObjType = {
     title: string;
     description: string;
     link: string;
     code: string | null;
 }
 
+export type MobileObjType = {
+    title: string;
+    description: string;
+    link: string;
+    code: string | null;
+    image:string
+}
 
 export type SkillObjType = {
     name: string;
@@ -38,6 +45,7 @@ export type ArticleObjType = {
 export type StatisticObjType = {
     name: string;
     length: number;
+    url:string;
 }
 
 export type NpmObjType = {

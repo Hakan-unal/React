@@ -1,5 +1,5 @@
 import {
-  DemoObjType,
+  WebObjType,
   SkillObjType,
   ProjectObjType,
   CertificateObjType,
@@ -7,9 +7,13 @@ import {
   ArticleObjType,
   StatisticObjType,
   NpmObjType,
+  MobileObjType
 } from "./types";
 
-export const demos: Array<DemoObjType> = [
+import mobile1 from "../assets/mobile1.webp";
+
+
+export const web: Array<WebObjType> = [
   {
     title: "Flower",
     description: "React.js, Antd, TypeScript",
@@ -210,6 +214,16 @@ export const demos: Array<DemoObjType> = [
   },
 ];
 
+export const mobile: Array<MobileObjType> = [
+  {
+    title: "To Do App",
+    description: "React Native",
+    link: "https://play.google.com/store/apps/dev?id=8883692665902284708",
+    code: "https://github.com/Hakan-unal/mobilTodoApp",
+    image:mobile1
+  },
+];
+
 export const skills: Array<SkillObjType> = [
   { name: "Software Development", rate: 4.5 },
   { name: "JavaScript", rate: 4.5 },
@@ -377,31 +391,43 @@ export const npmPackages: Array<NpmObjType> = [
 
 export const statistic: Array<StatisticObjType> = [
   {
-    name: "Demo",
-    length: demos.length,
+    name: "Web Apps",
+    length: web.length,
+    url:"web"
   },
   {
-    name: "Skill",
+    name: "Mobile Apps",
+    length: mobile.length,
+    url:"mobile"
+  },
+  {
+    name: "Technical Skills",
     length: skills.length,
+    url:"portfolio"
   },
   {
-    name: "Project",
+    name: "Projects",
     length: projects.length,
+    url:"projects"
   },
   {
-    name: "Certificate",
+    name: "Certificates",
     length: certificates.length,
+    url:"certificate"
   },
   {
-    name: "Component",
+    name: "Custom Components",
     length: components.length,
+    url:"components"
   },
   {
-    name: "Article",
+    name: "Articles",
     length: articles.length,
+    url:"articles"
   },
   {
     name: "Npm Packages",
     length: npmPackages.length,
+    url:"npm"
   },
 ];

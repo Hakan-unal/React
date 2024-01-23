@@ -1,13 +1,13 @@
 import React from "react";
-import { Button, Card, Col, Divider, Popover, Row, Space } from "antd";
+import { Button, Card, Col, Divider, Popover, Row, Space ,Image} from "antd";
 import vercel from "../../assets/vercel.jpg";
-import { demos } from "../../staticData/data";
+import { web } from "../../staticData/data";
 
-const Demos: React.FC = () => {
+const Web: React.FC = () => {
    return (
       <Card style={{ textAlign: "center" }}>
          <Row>
-            {demos.map((obj, index) => {
+            {web.map((obj, index) => {
                return (
                   <Col key={index} xs={24} sm={12} xl={8} xxl={6}>
                      <Card
@@ -17,7 +17,7 @@ const Demos: React.FC = () => {
                         title={
                            <Popover content={obj.title}>{obj.title}</Popover>
                         }
-                        cover={<img alt="vercel" src={vercel} />}
+                        cover={<Image preview={false} alt="vercel" src={vercel} />}
                      >
                         {obj.description}
 
@@ -50,4 +50,4 @@ const Demos: React.FC = () => {
       </Card>
    );
 };
-export default Demos;
+export default Web;

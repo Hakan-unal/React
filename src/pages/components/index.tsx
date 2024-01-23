@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Col, Divider, Row } from "antd";
+import { Button, Card, Col, Divider, Row ,Image} from "antd";
 import vercel from "../../assets/vercel.jpg";
 import { components } from "../../staticData/data";
 
@@ -15,7 +15,7 @@ const Components: React.FC = () => {
                         style={{ margin: 10, padding: 5 }}
                         hoverable
                         title={obj.title}
-                        cover={<img alt="vercel" src={vercel} />}
+                        cover={<Image preview={false}  alt="vercel" src={vercel} />}
                      >
                         {obj.description}
 

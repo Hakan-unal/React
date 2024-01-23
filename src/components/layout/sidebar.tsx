@@ -4,6 +4,7 @@ import { MenuProps, MenuTheme } from 'antd';
 import { AiOutlineHome, AiOutlineInsertRowBelow, AiTwotoneBuild, AiOutlineFilePdf, AiOutlineCopy, AiOutlineFolderOpen, AiOutlineFile } from "react-icons/ai";
 import { TbBrandVercel } from "react-icons/tb";
 import { FaNpm } from "react-icons/fa";
+import { CiMobile3 } from "react-icons/ci";
 
 import { Layout, Menu, Switch } from "antd"
 import { Link } from 'react-router-dom';
@@ -32,8 +33,9 @@ const items: MenuItem[] = [
   //   type: 'divider',
   // },
   getItem(<Link to="/projects">Projects</Link>, 'projects', <AiTwotoneBuild />),
-  getItem(<Link to="/demo">Vercel Demos</Link>, 'demo', <TbBrandVercel />),
-  getItem(<Link to="/portfolio">Portfolyo</Link>, 'portfolio', <AiOutlineFilePdf />),
+  getItem(<Link to="/web">Web Apps</Link>, 'web', <TbBrandVercel />),
+  getItem(<Link to="/mobile">Mobile Apps</Link>, 'mobile', <CiMobile3 />  ),
+  getItem(<Link to="/portfolio">Technical Skills</Link>, 'portfolio', <AiOutlineFilePdf />),
   getItem(<Link to="/components">Components</Link>, 'components', <AiOutlineInsertRowBelow />),
   getItem(<Link to="/clones">Clones</Link>, 'clones', <AiOutlineCopy />),
   getItem(<Link to="/npm">Npm Packages</Link>, 'npm', <FaNpm />),

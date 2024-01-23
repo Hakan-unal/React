@@ -1,26 +1,26 @@
 import React from "react";
-import { Button, Card, Col, Popover, Row, Space,Image } from "antd";
-import npm from "../../assets/npm.png";
+import { Button, Card, Col, Divider, Popover, Row, Space,Image } from "antd";
+import { mobile } from "../../staticData/data";
 
-import { npmPackages } from "../../staticData/data";
-
-const Npm: React.FC = () => {
+const Mobile: React.FC = () => {
    return (
       <Card style={{ textAlign: "center" }}>
          <Row>
-            {npmPackages.map((obj, index) => {
+            {mobile.map((obj, index) => {
                return (
-                  <Col key={index} xs={24} sm={12} xl={8} xxl={6}>
+                  <Col key={index} xs={24} sm={8} xl={6} xxl={4}>
                      <Card
                         bordered={false}
-                        style={{ margin: 10, padding: 50 }}
+                        style={{ margin: 10, padding: 5 }}
                         hoverable
                         title={
                            <Popover content={obj.title}>{obj.title}</Popover>
                         }
-                        cover={<Image preview={false} alt="npm" src={npm} />}
+                        cover={<Image  preview={false} alt="vercel" src={obj.image} />}
                      >
+                        {obj.description}
 
+                        <Divider />
                         <Space align="center">
                            {obj.link && (
                               <Button
@@ -49,4 +49,4 @@ const Npm: React.FC = () => {
       </Card>
    );
 };
-export default Npm;
+export default Mobile;
