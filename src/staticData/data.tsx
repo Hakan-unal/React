@@ -343,6 +343,10 @@ export const components: Array<ComponentObjType> = [
 ];
 export const articles: Array<ArticleObjType> = [
   {
+    title: "Exchange - Market Maker",
+    link: "https://marketmaker-delta.vercel.app/",
+  },
+  {
     title: "Agile Project Management",
     link: "https://agile-roan.vercel.app/",
   },
