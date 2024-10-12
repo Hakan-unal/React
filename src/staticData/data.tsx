@@ -21,6 +21,12 @@ export const web: Array<WebObjType> = [
     code: "https://github.com/Hakan-unal/difo-finance-case",
   },
   {
+    title: "Mayasoft Document Integration",
+    description: "React.js, Antd, JavaScript",
+    link: "https://mayasoft-document.vercel.app/",
+    code: "https://github.com/Hakan-unal/mayasoft-document",
+  },
+  {
     title: "Flower",
     description: "React.js, Antd, TypeScript",
     link: "https://flower-mu-sandy.vercel.app/",
