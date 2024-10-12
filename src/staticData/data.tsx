@@ -212,6 +212,18 @@ export const web: Array<WebObjType> = [
     link: "https://winterfell-be.vercel.app/",
     code: "https://github.com/Hakan-unal/winterfell-be",
   },
+  {
+    title: "IK Project Template",
+    description: "React.js, TypeScript",
+    link: "https://ik-psi.vercel.app/",
+    code: "https://github.com/Hakan-unal/IK",
+  },
+  {
+    title: "Sales Tracker Project Template",
+    description: "React.js, TypeScript",
+    link: "https://sales-tracker-delta.vercel.app/",
+    code: "https://github.com/Hakan-unal/sales-tracker",
+  },
 ];
 
 export const mobile: Array<MobileObjType> = [
@@ -342,6 +354,10 @@ export const components: Array<ComponentObjType> = [
   },
 ];
 export const articles: Array<ArticleObjType> = [
+  {
+    title:"Hiring Process",
+    link:"https://hiring-process-snowy.vercel.app/"
+  },
   {
     title: "Exchange - Market Maker",
     link: "https://marketmaker-delta.vercel.app/",
