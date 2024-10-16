@@ -368,7 +368,7 @@ export const components: Array<ComponentObjType> = [
 export const articles: Array<ArticleObjType> = [
   {
     title:"Project Management",
-    link:"https://vercel-rho-gules.vercel.app/"
+    link:"https://project-management-gamma.vercel.app/"
   },
   {
     title:"Hiring Process",
