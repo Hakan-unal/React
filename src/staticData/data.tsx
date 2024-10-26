@@ -15,6 +15,12 @@ import mobile1 from "../assets/mobile1.webp";
 
 export const web: Array<WebObjType> = [
   {
+    title:"Konzek Case",
+    description:"React.js, Antd, Typescript",
+    link:"https://konzek-case-pi.vercel.app/",
+    code:"https://github.com/Hakan-unal/konzek-case"
+  },
+  {
     title: "Difo Finance Case",
     description: "React.js, Antd, TypeScript",
     link: "https://difo-finance-case.vercel.app/",
