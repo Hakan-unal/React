@@ -15,8 +15,14 @@ import mobile1 from "../assets/mobile1.webp";
 
 export const web: Array<WebObjType> = [
   {
+    title:"Edixir Case",
+    description:"React.js, AntD, TypeScript",
+    link:"https://edixir-case.vercel.app/",
+    code:"https://github.com/Hakan-unal/edixir-case"
+  },
+  {
     title:"Konzek Case",
-    description:"React.js, Antd, Typescript",
+    description:"React.js, Antd, TypeScript",
     link:"https://konzek-case-pi.vercel.app/",
     code:"https://github.com/Hakan-unal/konzek-case"
   },
