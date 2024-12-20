@@ -15,6 +15,12 @@ import mobile1 from "../assets/mobile1.webp";
 
 export const web: Array<WebObjType> = [
   {
+    title:"Typing Speed",
+    description:"React.js, AntD, TypeScript",
+    link:"https://keyboard-speed-game.vercel.app/",
+    code:"https://github.com/Hakan-unal/keyboard-speed-game"
+  },
+  {
     title:"Edixir Case",
     description:"React.js, AntD, TypeScript",
     link:"https://edixir-case.vercel.app/",
